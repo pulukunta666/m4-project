@@ -1,2 +1,10 @@
-pipeline
-
+pipeline{
+  agent any
+  stages{
+    stage("checkout"){
+      step{
+        echo "cloning the repository"
+      }
+    }
+  }
+}
